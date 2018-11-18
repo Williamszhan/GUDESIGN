@@ -1,0 +1,179 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: PingFangSC-Regular, sans-serif;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+h1,
+p {
+  font-family: PingFangSC-Regular, sans-serif;
+}
+@font-face {
+  font-family: 'pingFangSC-Regular';
+  src: url('pingFangRegular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  height: 236px;
+}
+header .header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header #logo {
+  flex: 1;
+  text-align: center;
+  font-size: 100px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 23px;
+  color: #040404;
+}
+header .header #logo:hover {
+  text-decoration: none;
+}
+header .header span {
+  font-size: 53px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 23px;
+  color: #4b4b4b;
+}
+@keyframes close {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+header .header #close {
+  animation: close linear 1s;
+}
+@keyframes en {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header .header #en {
+  animation: en linear 1s;
+}
+@keyframes nav {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+header nav {
+  background: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: 236px;
+  z-index: 101;
+}
+header .nav {
+  animation: nav 1s;
+  width: 80%;
+  margin: 0 auto;
+}
+header .nav li {
+  list-style: none;
+  width: 296px;
+  border-bottom: 1px solid #282727;
+  padding-bottom: 53px;
+  margin-bottom: 53px;
+}
+header .nav li a {
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 23px;
+  letter-spacing: 0;
+  color: #000000;
+}
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 70px;
+}
+footer .link {
+  width: 347px;
+  height: 37px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 23px;
+  letter-spacing: 0px;
+  color: #302f2f;
+  opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 13.75vw;
+    background-color: #ffffff;
+  }
+  header .header #logo {
+    font-size: 7.03vw;
+    color: #040404;
+  }
+  header .header img {
+    width: 4.53vw;
+    height: 3.59vw;
+  }
+  header .header #close {
+    width: 3.59vw;
+    height: 3.59vw;
+  }
+  header .header span {
+    font-size: 3.59vw;
+    color: #4b4b4b;
+  }
+  header nav {
+    top: 13.8vw;
+    height: 100vh;
+    padding-top: 19vw;
+  }
+  header nav .nav li {
+    width: 29.84vw;
+    padding-bottom: 7.03vw;
+    margin-bottom: 11.56vw;
+  }
+  header nav .nav li a {
+    padding: 0;
+    font-size: 4.69vw;
+    color: #000000;
+  }
+  footer {
+    width: 90vw;
+    border-top: 0.16vw solid rgba(0, 0, 0, 0.5);
+    padding: 1.72vw 0 20vw;
+  }
+  footer p {
+    font-size: 2.34vw;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 3.64vw;
+    color: #302f2f;
+    opacity: 0.6;
+  }
+}

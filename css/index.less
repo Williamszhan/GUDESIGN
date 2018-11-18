@@ -1,0 +1,153 @@
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: solid 2px #ffffff;
+  opacity: 1;
+  background: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.content {
+  padding: 105px 0 90px;
+
+  h1 {
+    font-family: PingFangSC-Regular, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #000000;
+    margin: 25px auto 98px;
+  }
+  .image {
+    width: 100%;
+    margin-bottom: 95px;
+  }
+  .project-wrap {
+    position: relative;
+  }
+  .inner {
+    display: none;
+    transition: all .5s;
+  }
+  .project-wrap:hover .inner {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background-color: #000000;
+    border: solid 1px #000000;
+    opacity: 0.3;
+    padding-top: 20px;
+    p {
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 18px;
+      letter-spacing: 0;
+      color: #fcf9f9;
+      text-align: end;
+      margin-right: 32px;
+    }
+  }
+  .awards-wrap {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      flex: 0 0 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+  }
+  .contact-wrap {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      font-size: 30px;
+      padding-top: 115px;
+      img {
+        margin-top: 140px;
+        margin-left: 16px;
+        width: 298px;
+        height: 298px;
+      }
+      h3 {
+        margin-left: 100px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    width: 100vw;
+    height: 51.56vw;
+  }
+  .swiper-pagination-bullet {
+    opacity: 1;
+    background: none;
+    width: 0.94vw;
+    height: 0.94vw;
+    border: solid 0.31vw #ffffff;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+  }
+  .content {
+    padding: 3vw 0 5.94vw;
+    h1 {
+      margin: 9vw;
+      font-size: 3.91vw;
+      color: #000000;
+    }
+    .image {
+      margin-bottom: 8vw;
+    }
+    .awards-wrap {
+      .item {
+        margin-bottom: 10vw;
+      }
+    }
+    .contact-wrap {
+      .item {
+        padding-top: 1vw;
+        p {
+          font-size: 2vw;
+          color: #000000;
+          margin: 0;
+        }
+        p:first-child {
+          margin-bottom: 3.13vw;
+        }
+        img {
+          margin-top: 8vw;
+          margin-left: 2vw;
+          width: 27vw;
+          height: 27vw;
+        }
+        h3 {
+          margin: 3.28vw 9.22vw 3.59vw;
+          font-size: 2vw;
+          font-weight: normal;
+          font-stretch: normal;
+          color: #000000;
+        }
+      }
+      img {
+        width: 37.81vw;
+        height: 64.38vw;
+      }
+    }
+  }
+}
