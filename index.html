@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta id="i18n_pagename" content="index-common">
     <title>GU DESIGN</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet/less" type="text/css" href="css/styles.less">
     <link rel="stylesheet/less" type="text/css" href="css/index.less">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
 
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -28,18 +27,16 @@
         <img id="menu" src="images/icon-menu.png" alt="menu">
         <img id="close" src="images/icon-close.png" alt="menu">
         <a id="logo" class="col-xs-6" href="index.html">GU DESIGN</a>
-        <!--<img src="images/icon-ch.png" alt="中">-->
-        <span id="ch">中</span>
-        <span id="en">En</span>
+        <span onclick="switchLang()" id="lang">中</span>
     </div>
     <nav>
         <div class="container">
             <ul class="nav ">
-                <li><a href="about.html">About</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html" id="about">About</a></li>
+                <li><a href="news.html" id="news">News</a></li>
+                <li><a href="projects.html" class="projects">Projects</a></li>
+                <li><a href="video.html" class="video">Video</a></li>
+                <li><a href="contact.html" id="contact_us">Contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -76,7 +73,7 @@
     </div>
 
     <div class="content container">
-        <h1 class="i18n">Projects</h1>
+        <h1 class="projects">Projects</h1>
         <div class="project-wrap hidden-xs">
             <div class="inner">
                 <p>项目名称</p>
@@ -104,9 +101,9 @@
         <img class="image img-responsive visible-xs" src="./images/project-img1.jpg" alt="project1">
         <img class="image img-responsive visible-xs" src="./images/project-img2.jpg" alt="project2">
         <img class="image img-responsive visible-xs" src="./images/project-img3.jpg" alt="project3">
-        <h1>Video</h1>
+        <h1 class="video">Video</h1>
         <img class="image img-responsive" src="./images/video-img.jpg" alt="video">
-        <h1>Awards</h1>
+        <h1 class="awards">Awards</h1>
         <div class="awards-wrap">
             <div class="item">
                 <img class="img-responsive hidden-xs" src="./images/about-reddot.jpg" alt="awards1">
@@ -157,14 +154,14 @@
                 <img class="img-responsive visible-xs" src="./images/awards12.png" alt="awards12">
             </div>
         </div>
-        <h1>Contact us</h1>
+        <h1 class="contact_us">Contact us</h1>
         <div class="contact-wrap">
             <div class="item">
                 <p>Consultation｜business｜media</p>
                 <p>TEL : 136xxxxxxxx</p>
                 <p>E-mail : xxxxxxxxx@qq.com</p>
                 <img src="./images/contact-qrcode.jpg" alt="qrcode">
-                <h3>WeChat</h3>
+                <h3 class="wechat">WeChat</h3>
             </div>
             <img src="./images/index-contact.jpg" alt="contact">
         </div>
@@ -186,8 +183,10 @@
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-<script src="js/i18n/jquery.i18n.properties.min.js"></script>
-<script src="js/i18n/language.extensions.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script>
+<script src="js/i18n/jquery.i18n.properties.js"></script>
+<script src="js/i18n/language.js"></script>
+<!-- <script src="js/less.min.js" ></script> -->
 <script src="js/utils.js"></script>
 <script src="js/index.js"></script>
 </body>
